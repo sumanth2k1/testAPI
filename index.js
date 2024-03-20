@@ -17,7 +17,11 @@ app.use(express.json())
 
 app.get('/',(req,res)=>res.send("Im alive"))
 app.post('/data',async(req,res)=>{
-    console.log(req.body);
+    console.log({
+        success: true,
+        data : req.body,
+        req : req
+    });
     return res.json({
         success: true,
         data : req.body,
