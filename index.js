@@ -18,7 +18,7 @@ app.use(express.json())
 app.get('/',(req,res)=>res.send("Im alive"))
 app.post('/data',async(req,res)=>{
     const val = JSON.stringify(req)
-    const val1 = JSON.stringify(req.body)
+    const val1 = JSON.stringify(req.query)
     console.log({
         success: true,
         data : val,
