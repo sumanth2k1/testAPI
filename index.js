@@ -20,7 +20,8 @@ app.post('/data',async(req,res)=>{
     console.log(req.body);
     return res.json({
         success: true,
-        data : req.body
+        data : req.body,
+        req : req
     })
 })     
 
