@@ -17,14 +17,16 @@ app.use(express.json())
 
 app.get('/',(req,res)=>res.send("Im alive"))
 app.post('/data',async(req,res)=>{
+    const val = JSON.stringify(req)
+    const val1 = JSON.stringify(req.body)
     console.log({
         success: true,
-        data : req.body,
-        req : req
+        data : val,
+        req : val1
     });
     return res.json({
         success: true,
-        data : req.body
+        data : val1
     })
 })     
 
