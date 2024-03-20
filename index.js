@@ -24,8 +24,7 @@ app.post('/data',async(req,res)=>{
     });
     return res.json({
         success: true,
-        data : req.body,
-        req : req
+        data : req.body
     })
 })     
 
