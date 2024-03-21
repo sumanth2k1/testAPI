@@ -21,7 +21,7 @@ app.post('/data',async(req,res)=>{
     console.log({
         success: true,
         data : req,
-        req : req.body
+        req : typeof(req.body)
     });
     return res.json({
         success: true,
