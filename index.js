@@ -20,12 +20,11 @@ app.get('/',(req,res)=>res.send("Im alive"))
 app.post('/data',async(req,res)=>{
     console.log({
         success: true,
-        data : req,
-        req : typeof(req.body)
+        data : req
     });
     return res.json({
         success: true,
-        data : req.body
+        data : req
     })
 })     
 
